@@ -17,7 +17,7 @@ var JwtAuthMiddleware = jwtmiddleware.New(jwtmiddleware.Config{
 	Extractor:           extractor,
 }).Serve
 
-const jwtKey = "FILClient/"
+const jwtKey = "FILClient"
 
 var validationKeyGetterFuc = func(token *jwt.Token) (interface{}, error) {
 	return []byte(jwtKey), nil
@@ -55,7 +55,7 @@ func GetJWT() *jwtmiddleware.Middleware {
 func GenerateToken(msg string) string {
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
 		"msg": msg,                                                      //openid
-		"iss": "iris_FILClient/",                                      //签发者
+		"iss": "iris_FILClient",                                      //签发者
 		"iat": time.Now().Unix(),                                        //签发时间
 		"jti": "9527",                                                   //jwt的唯一身份标识，主要用来作为一次性token,从而回避重放攻击。
 		"exp": time.Now().Add(10 * time.Hour * time.Duration(1)).Unix(), //过期时间

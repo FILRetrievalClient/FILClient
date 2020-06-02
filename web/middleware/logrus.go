@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"FILClient//models"
+	"FILClient/models"
 	"fmt"
 	"github.com/kataras/iris/v12/context"
 	"github.com/sirupsen/logrus"

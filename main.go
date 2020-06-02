@@ -5,10 +5,10 @@ import (
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	
-	"FILClient//web/middleware"
-	"FILClient//config"
-	"FILClient//models"
-	"FILClient//route"
+	"FILClient/web/middleware"
+	"FILClient/config"
+	"FILClient/models"
+	"FILClient/route"
 )
 
 var (

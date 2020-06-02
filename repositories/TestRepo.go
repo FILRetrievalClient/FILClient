@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"FILClient//models"
+	"FILClient/models"
 	"github.com/jinzhu/gorm"
 )
 
