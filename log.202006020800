@@ -1,0 +1,1 @@
+2020-06-02T15:47:27+08:00[36m [INFO] [app:irisgo] [length:0] [line:middleware/logrus.go:26] [method:GET] [proto:HTTP/1.1] [referer:] [uri:/] [user-agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36] [0m这是一条测试

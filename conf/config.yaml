@@ -2,9 +2,9 @@ gormlog: true
 app_name: "irisgo"
 mysql:
   username: "root"
-  password: ""
-  addr: "127.0.0.1:3306"
-  name: ""
+  password: "HKr33!&"
+  addr: "116.31.96.132:3306"
+  name: "filclient"
 log:
   logger_level: DEBUG #
   logger_file: log
