@@ -1,11 +1,11 @@
-package models
+package db
 
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"log"
 	"github.com/spf13/viper"
+	"log"
 	"time"
 )
 

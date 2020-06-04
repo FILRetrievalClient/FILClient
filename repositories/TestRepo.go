@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"FILClient/models"
+	"FILClient/models/db"
 	"github.com/jinzhu/gorm"
 )
 
@@ -10,5 +10,5 @@ type TestRepositories struct {
 }
 
 func NewTestRepositories() *TestRepositories {
-	return &TestRepositories{db: models.DB.Mysql}
+	return &TestRepositories{db: db.DB.Mysql}
 }

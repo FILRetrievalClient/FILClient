@@ -1,12 +1,12 @@
 package main
 
 import (
+	"FILClient/models/db"
 	"github.com/kataras/iris/v12"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 
 	"FILClient/config"
-	"FILClient/models"
 	"FILClient/route"
 	"FILClient/web/middleware"
 )
@@ -21,7 +21,7 @@ func main() {
 	if err := config.Init(*cfg); err != nil {
 		panic(err)
 	}
-	models.DB.Init()
+	db.DB.Init()
 	app := newApp()
 	route.InitRouter(app)
 
@@ -29,6 +29,10 @@ func main() {
 }
 
 func newApp() *iris.Application {
+	//drivername = "mysql"
+	//if env.IsTestEnv(){
+	//	conn
+	//}
 	app := iris.New()
 	//crs := cors.New(cors.Options{
 	//	AllowedOrigins:   []string{"*"}, // allows everything, use that to change the hosts.
